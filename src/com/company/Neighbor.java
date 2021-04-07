@@ -1,8 +1,10 @@
 package com.company;
 
 public class Neighbor implements Comparable{
-	private int id;//编号
-	private double value;//相似度
+    //编号
+	private int id;
+    //相似度
+	private double value;
 	public Neighbor(int id,double value) {
 		this.id=id;
 		this.value=value;
