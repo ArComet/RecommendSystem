@@ -8,11 +8,11 @@ public class Neighbor implements Comparable{
 		this.value=value;
 	}
 
-	int getID(){
+	public int getID(){
 		return id;
 	}
 
-	double getValue(){
+	public double getValue(){
 		return value;
 	}
 

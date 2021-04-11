@@ -13,15 +13,16 @@ public class BaseData {
     int UserSize;
 
     //用户评分矩阵
-    Map<Integer , Double>[] score;
+    Map<Integer, Double>[] score;
 
     public BaseData(){
         UserSize = 0;
+        score = new Map[MAXUSERSIZE];
     }
 
     public int addUser(){
-        score[UserSize++]=new HashMap<Integer, Double>();
-        return UserSize;
+        score[UserSize]=new HashMap<Integer, Double>();
+        return UserSize++;
     }
 
     //set 修改用户对一个物品的打分

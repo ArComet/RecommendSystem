@@ -14,15 +14,16 @@ public class UserBaseCF extends BaseData{
 	 * 维护用户平均打分
 	 * num 打分次数 sum 打分分数和
 	 * */
-	private int[] num=new int[MAXUSERSIZE];
-	private double[] sum=new double[MAXUSERSIZE];
+	private int[] num = new int[MAXUSERSIZE];
+	private double[] sum = new double[MAXUSERSIZE];
 	private double getAverage(int userID){
+		if (num[userID]==0) return 0;
 		return 1.0*sum[userID]/num[userID];
 	}
 
 	//用户近邻
-	private Neighbor[][] neighbor =new Neighbor[MAXUSERSIZE +1][UN+1];//每个用户的最近的UN个邻居
-
+	private Neighbor[][] neighbor = new Neighbor[MAXUSERSIZE][UN];//每个用户的最近的UN个邻居
+	private int [] numOfneighbor = new int[MAXUSERSIZE];
 	public void setNeighbor(Neighbor[][] neighbor){
 		this.neighbor=neighbor;
 	}
@@ -66,23 +67,25 @@ public class UserBaseCF extends BaseData{
 	}
 
 	//求user的近邻，求NofUser数组
-	private void findNeighbor(int userID){
+	private int findNeighbor(int userID){
 		Set<Integer> keys = score[userID].keySet();
-		Queue<Neighbor> neighborList = new PriorityQueue<>();
+		Queue<Neighbor> neighbors = new PriorityQueue<>();
 
 		for(int id = 0; id< UserSize; id++){
 			if(id==userID) continue;
 			double[] V1 = getVectorOfMap(score[userID],keys,getAverage(userID));
 			double[] V2 = getVectorOfMap(score[id],keys,getAverage(id));
 			double sim = Pearson(V1,V2,keys.size());
-			neighborList.add(new Neighbor(id,sim));
-			if (neighborList.size()>UN) neighborList.remove();
+			neighbors.add(new Neighbor(id,sim));
+			if (neighbors.size()>UN) neighbors.remove();
 		}
 
-		int k=0;
-		for (Neighbor it:neighborList){
-			neighbor[userID][k++]=it;
+		int cnt=0;
+		while (!neighbors.isEmpty()){
+			neighbor[userID][cnt++]=neighbors.peek();
+			neighbors.remove();
 		}
+		return cnt;
 	}
 	
 	//根据最近邻居给出预测评分
@@ -91,8 +94,11 @@ public class UserBaseCF extends BaseData{
 	    double sum2=0;
 	    for(int i=0; i<Math.min(UN, UserSize-1); i++){//对最近的UN个邻居进行处理
 	    	int neighborID=neighbor[userID][i].getID();
-	        double sim=neighbor[userID][i].getValue();
-	        sum1+=sim*(score[neighborID].get(itemID)-getAverage(userID));
+	        double sim = neighbor[userID][i].getValue();
+	        double nei = getAverage(neighborID);
+	        if (score[neighborID].containsKey(itemID))
+	        	nei = score[neighborID].get(itemID);
+	        sum1+=sim*(nei-getAverage(userID));
 	        sum2+=Math.abs(sim);
 	    }
 	    return getAverage(userID)+sum1/sum2;
@@ -102,7 +108,7 @@ public class UserBaseCF extends BaseData{
 	public int[] Recommending(int userID, int size){
 		Queue<Item> items = new PriorityQueue<>();
 		Set<Integer> unique = new HashSet<>();//去重
-		for(int i=0; i<Math.min(UN, UserSize-1); i++){//对最近的UN个邻居进行处理
+		for(int i=0; i<numOfneighbor[userID]; i++){//对最近邻居进行处理
 			int neighborID=neighbor[userID][i].getID();
 			for (Integer key:score[neighborID].keySet()){
 				if (score[userID].containsKey(key)) continue;
@@ -115,7 +121,6 @@ public class UserBaseCF extends BaseData{
 				}
 			}
 		}
-
 		int[] itemList = new int[size];
 		int k=0;
 		while (k<size && !items.isEmpty()){
@@ -130,15 +135,31 @@ public class UserBaseCF extends BaseData{
 	}
 
 	@Override
+	public int addUser(){
+		score[UserSize]=new HashMap<Integer, Double>();
+		num[UserSize]=0;
+		sum[UserSize]=0;
+		return UserSize++;
+	}
+
+	@Override
 	public int updateItemScoreOfUser(int UserID,int ItemID,double ItemScore){
 		try {
-			if (!score[UserID].containsKey(ItemID))
+			if (!score[UserID].containsKey(ItemID)){
 				num[UserID]++;
-			else
+				sum[UserID]+=ItemScore;
+				score[UserID].put(ItemID,ItemScore);
+			}
+			else{
 				sum[UserID]-=score[UserID].get(ItemID);
-			sum[UserID]+=ItemScore;
-			score[UserID].replace(ItemID,ItemScore);
-			findNeighbor(UserID);
+				sum[UserID]+=ItemScore;
+				score[UserID].replace(ItemID,ItemScore);
+			}
+			for (int uid=0; uid<UserSize; uid++){
+				if (score[uid].containsKey(ItemID)){
+					numOfneighbor[UserID]=findNeighbor(UserID);
+				}
+			}
 			return 0;
 		}catch (Exception e){
 			return -1;
@@ -153,7 +174,11 @@ public class UserBaseCF extends BaseData{
 			for (Integer key : ScoreMap.keySet())
 				sum[UserID]+=ScoreMap.get(key);
 			score[UserID]=ScoreMap;
-			findNeighbor(UserID);
+
+			for (int uid=0; uid<UserSize; uid++){
+				numOfneighbor[UserID]=findNeighbor(UserID);
+			}
+
 			return 0;
 		}catch (Exception e){
 			return -1;
