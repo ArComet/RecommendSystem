@@ -1,20 +1,21 @@
-package com.company;
+package com.recommend;
 
 public class Neighbor implements Comparable{
-    //编号
-	private int id;
-    //相似度
-	private double value;
-	public Neighbor(int id,double value) {
+	private int id;//编号
+	private double value;//相似度
+	Neighbor(int id, double value) {
 		this.id=id;
 		this.value=value;
 	}
-	public int getID(){
+
+	int getID(){
 		return id;
 	}
-	public double getValue(){
+
+	double getValue(){
 		return value;
 	}
+
 	public int compareTo(Object o) {//降序排列
 		// TODO Auto-generated method stub
 		if(o instanceof Neighbor){

@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/com/recommend/BaseData.java" line="15" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bdefc898-3779-4f15-b44a-70dfaabff4d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/BaseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/recommend/BaseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/recommend/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Neighbor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/UserBaseCF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/allbut.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/mku.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u.genre" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u.item" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u.occupation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u1.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u1.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u2.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u2.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u3.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u3.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u4.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u4.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u5.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/u5.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/ua.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/ua.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/ub.base" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ml-data_0/ub.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/testResult.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/UserBaseCF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/UserBaseCF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Neighbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Neighbor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/UserBaseCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/UserBaseCF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/BaseData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/Neighbor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecommenderCore/com/company/UserBaseCF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/BaseData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Neighbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recommend/Neighbor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/UserBaseCF.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,52 +52,67 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/UserBaseCF.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+            <state relative-caret-position="-1206">
+              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
               <folding>
+                <element signature="e#3361#3362#0" expanded="true" />
+                <element signature="e#3375#3376#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recommend/BaseData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
                 <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#2785#2786#0" expanded="true" />
-                <element signature="e#2799#2800#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BaseData.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="454">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/recommend/Neighbor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="56">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <element signature="e#222#223#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Neighbor.java">
+        <entry file="file://$PROJECT_DIR$/src/com/recommend/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="-156">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -142,10 +142,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/BaseData.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Neighbor.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Item.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Neighbor.java" />
         <option value="$PROJECT_DIR$/src/com/company/UserBaseCF.java" />
+        <option value="$PROJECT_DIR$/src/com/company/BaseData.java" />
+        <option value="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" />
+        <option value="$PROJECT_DIR$/src/com/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/recommend/BaseData.java" />
       </list>
     </option>
   </component>
@@ -162,23 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RecommenderCore" type="58d84e3e:PackageViewProjectNode" />
-              <item name="RecommenderCore" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="RecommenderCore" type="58d84e3e:PackageViewProjectNode" />
-              <item name="RecommenderCore" type="616d4139:PackageViewModuleNode" />
-              <item name="com.company" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,7 +182,38 @@
               <item name="RecommenderCore" type="b2602c69:ProjectViewProjectNode" />
               <item name="RecommenderCore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecommenderCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecommenderCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="recommend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecommenderCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecommenderCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RecommenderCore" type="58d84e3e:PackageViewProjectNode" />
+              <item name="RecommenderCore" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="RecommenderCore" type="58d84e3e:PackageViewProjectNode" />
+              <item name="RecommenderCore" type="616d4139:PackageViewModuleNode" />
+              <item name="com.company" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -206,8 +224,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617810532583" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618149808794" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -223,7 +246,7 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.sample.Main" />
       <module name="RecommenderCore" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -233,11 +256,11 @@
       </method>
     </configuration>
     <configuration name="UserBaseCF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.UserBaseCF" />
+      <option name="MAIN_CLASS_NAME" value="com.recommend.UserBaseCF" />
       <module name="RecommenderCore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -266,17 +289,18 @@
       <workItem from="1617697027736" duration="2195000" />
       <workItem from="1617703453639" duration="8664000" />
       <workItem from="1617782120238" duration="14612000" />
+      <workItem from="1617848417898" duration="3079000" />
+      <workItem from="1618113621275" duration="16765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26249000" />
+    <option name="totallyTimeSpent" value="46093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25938338" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
       <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.3324397" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -285,7 +309,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50141644" side_tool="true" weight="0.3324397" />
       <window_info id="Find" order="7" sideWeight="0.49858356" weight="0.3324397" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.21954674" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.3654391" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -323,44 +347,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BaseData.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="-156">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1206">
+          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
           <folding>
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#3361#3362#0" expanded="true" />
+            <element signature="e#3375#3376#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/Neighbor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Neighbor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/UserBaseCF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state relative-caret-position="56">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/BaseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
             <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#2785#2786#0" expanded="true" />
-            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
