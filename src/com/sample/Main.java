@@ -31,6 +31,7 @@ public class Main {
                 cf.updateItemScoreOfUser(uid,j,matrix[i][j]);
             }
         }
+
         Neighbor[][] Neighbor = cf.getNeighbor();
 
         System.out.print("Neighbor of user 4:[");

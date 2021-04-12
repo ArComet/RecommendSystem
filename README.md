@@ -1,6 +1,81 @@
-# 基于协同过滤的推荐系统算法核心
+# 基于协同过滤的推荐系统算法
+
+## 示例说明
+
+初始化聚类器
+
+```java
+import com.recommend.UserBaseCF;
+
+UserBaseCF cf = new UserBaseCF();
+```
+
+添加用户并导入打分数据
+
+```java
+        //原始用户评分数据
+        double[][] matrix={
+                {10,9,7,0,0},
+                {8,1,0,0,0},
+                {0,0,7,8,9},
+                {0,0,0,8,9},
+                {10,0,0,0,10},
+        };
+
+        UserBaseCF cf = new UserBaseCF();
+
+        for (int i=0; i<5; i++){
+            int uid = cf.addUser();
+            for (int j=0; j<5; j++){
+                if (matrix[i][j]==0) continue;
+                cf.updateItemScoreOfUser(uid,j,matrix[i][j]);
+            }
+        }
+```
 
 
+查询用户的近邻
+
+```java
+import com.recommend.Neighbor;
+
+Neighbor[][] Neighbor = cf.getNeighbor();
+```
+
+获取用户的推荐物品列表
+
+```java
+int[] itemlist = cf.Recommending(4,3);
+```
+
+## 接口文档
+
+
+| int addUser() | 添加用户 |      |
+| ------------- | -------- | ---- |
+| return        | 该用户id | int  |
+
+
+| int updateItemScoreOfUser(int UserID,int ItemID,double ItemScore) | 添加/修改用户打分  |        |
+| ------------------------------------------------------------ | ------------------ | ------ |
+| UserID                                                       | 用户id             | int    |
+| ItemID                                                       | 物品id             | int    |
+| ItemScore                                                    | 用户对该物品的打分 | double |
+| return                                                       | 0：成功，-1：失败  | int    |
+
+
+| int updateItemScoreOfUser(int UserID, Map<Integer, Double> ScoreMap) | 批量添加/修改用户打分                          |                      |
+| ------------------------------------------------------------ | ---------------------------------------------- | -------------------- |
+| UserID                                                       | 用户id                                         | int                  |
+| ScoreMap                                                     | 用户打分表，键值：物品id，值：用户对该物品打分 | Map<Integer, Double> |
+| return                                                       | 0：成功，-1：失败                              | int                  |
+
+
+| int[] Recommending(int userID, int size) | 获取用户的推荐物品列表       |       |
+| ---------------------------------------- | ---------------------------- | ----- |
+| userID                                   | 用户id                       | int   |
+| size                                     | 推荐列表大小                 | int   |
+| return                                   | 物品id的列表（按推荐度排序） | int[] |
 
 # 机器学习算法——协同过滤推荐算法
 
