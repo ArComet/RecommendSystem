@@ -23,13 +23,16 @@ public class UserBaseCF extends BaseData{
 
 	//用户近邻
 	private Neighbor[][] neighbor = new Neighbor[MAXUSERSIZE][UN];//每个用户的最近的UN个邻居
-	private int [] numOfneighbor = new int[MAXUSERSIZE];
+	int [] numOfneighbor = new int[MAXUSERSIZE];
 	public void setNeighbor(Neighbor[][] neighbor){
 		this.neighbor=neighbor;
 	}
 
 	public Neighbor[][] getNeighbor(){
 		return neighbor;
+	}
+	public Neighbor[] getNeighbor(int userid){
+		return neighbor[userid];
 	}
 
 
@@ -92,7 +95,7 @@ public class UserBaseCF extends BaseData{
 	private double predictByNeighbor(int userID, int itemID){//这里的userID为用户输入，减1后为数组下标！
 		double sum1=0;
 	    double sum2=0;
-	    for(int i=0; i<Math.min(UN, UserSize-1); i++){//对最近的UN个邻居进行处理
+	    for(int i=0; i<numOfneighbor[userID]; i++){//对最近的UN个邻居进行处理
 	    	int neighborID=neighbor[userID][i].getID();
 	        double sim = neighbor[userID][i].getValue();
 	        double nei = getAverage(neighborID);
@@ -105,7 +108,7 @@ public class UserBaseCF extends BaseData{
 	}
 
 	//根据最近邻居给出推荐物品
-	public int[] Recommending(int userID, int size){
+	public int[] Recommending(int userID,int size){
 		Queue<Item> items = new PriorityQueue<>();
 		Set<Integer> unique = new HashSet<>();//去重
 		for(int i=0; i<numOfneighbor[userID]; i++){//对最近邻居进行处理
@@ -122,11 +125,16 @@ public class UserBaseCF extends BaseData{
 			}
 		}
 		int[] itemList = new int[size];
-		int k=0;
-		while (k<size && !items.isEmpty()){
-			itemList[k++] = items.peek().getID();
-			items.remove();
+
+		for (int i=0; i<size; i++){
+			if (!items.isEmpty()){
+				itemList[i] = items.peek().getID();
+				items.remove();
+			}
+			else
+				itemList[i] = -1;
 		}
+
 		return itemList;
 	}
 

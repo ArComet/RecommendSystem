@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/com/sample/sample_item.java" line="31" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5791b88a-3a11-4aeb-a993-fe0f24203c2e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sample/sample_item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecommendSystem/com/recommend/UserBaseCF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RecommendSystem/com/recommend/UserBaseCF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecommendSystem/com/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sample/sample_user.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,22 +26,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sample/sample_item.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="46" />
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sample/sample_user.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3112">
+              <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#3764#3765#0" expanded="true" />
+                <element signature="e#3778#3779#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
+        <entry file="file://$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2772">
-              <caret line="111" column="55" lean-forward="true" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="55" />
+            <state relative-caret-position="474">
+              <caret line="38" selection-start-line="10" selection-end-line="38" />
+              <folding>
+                <element signature="e#3670#3671#0" expanded="true" />
+                <element signature="e#3684#3685#0" expanded="true" />
+                <element signature="method#updateUserScoreOfItem#0;class#ItemBaseCF#0" />
+                <element signature="method#updateUserScoreOfItem#1;class#ItemBaseCF#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/recommend/BaseData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="368">
               <caret line="25" column="5" selection-start-line="22" selection-start-column="24" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/recommend/Neighbor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="-56">
               <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
             </state>
           </provider>
@@ -87,8 +125,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/recommend/BaseData.java" />
         <option value="$PROJECT_DIR$/src/com/recommend/Neighbor.java" />
-        <option value="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" />
         <option value="$PROJECT_DIR$/src/com/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/sample/sample_u.java" />
+        <option value="$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java" />
+        <option value="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" />
+        <option value="$PROJECT_DIR$/src/com/sample/sample_user.java" />
+        <option value="$PROJECT_DIR$/src/com/sample/sample_item.java" />
       </list>
     </option>
   </component>
@@ -96,6 +138,9 @@
     <option name="x" value="125" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -138,16 +183,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618192192038" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618319312278" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sample" />
+      <recent name="com.recommend" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,9 +212,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sample.Main" />
+  <component name="RunManager" selected="Application.sample_user">
+    <configuration name="sample_item" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sample.sample_item" />
+      <module name="RecommendSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sample_user" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sample.sample_user" />
       <module name="RecommendSystem" />
       <extension name="coverage">
         <pattern>
@@ -177,7 +241,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.sample_user" />
+        <item itemvalue="Application.sample_item" />
       </list>
     </recent_temporary>
   </component>
@@ -193,17 +258,19 @@
       <updated>1618155767033</updated>
       <workItem from="1618155774143" duration="6401000" />
       <workItem from="1618189363976" duration="2628000" />
+      <workItem from="1618281321985" duration="611000" />
+      <workItem from="1618303274740" duration="10498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9029000" />
+    <option name="totallyTimeSpent" value="20138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -238,27 +305,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/recommend/BaseData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="25" column="5" selection-start-line="22" selection-start-column="24" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recommend/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recommend/Neighbor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -270,20 +320,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/BaseData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="368">
+          <caret line="25" column="5" selection-start-line="22" selection-start-column="24" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/Neighbor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sample/sample_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sample/sample_item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="111" column="55" lean-forward="true" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="55" />
+        <state relative-caret-position="3112">
+          <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
+          <folding>
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#3764#3765#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="38" selection-start-line="10" selection-end-line="38" />
+          <folding>
+            <element signature="e#3670#3671#0" expanded="true" />
+            <element signature="e#3684#3685#0" expanded="true" />
+            <element signature="method#updateUserScoreOfItem#0;class#ItemBaseCF#0" />
+            <element signature="method#updateUserScoreOfItem#1;class#ItemBaseCF#0" />
+          </folding>
         </state>
       </provider>
     </entry>
