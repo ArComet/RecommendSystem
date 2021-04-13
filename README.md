@@ -150,16 +150,16 @@ int[] itemList = cf.Similar(0,4);
 | --------- | ---- | -------- |
 | return    | int  | 该物品id |
 
-添加/修改用户打分
+添加/修改物品打分
 
 | updateUserScoreOfItem(ItemID, UserID, UserScore) |        |                    |
 | ------------------------------------------------ | ------ | ------------------ |
 | ItemID                                           | int    | 物品id             |
 | UserID                                           | int    | 用户id             |
-| ItemScore                                        | double | 物品被该用户的打分 |
+| ItemScore                                        | double | 用户对该物品的打分 |
 | return                                           | int    | 0：成功，-1：失败  |
 
-批量添加/修改用户打分
+批量添加/修改物品打分
 
 | updateUserScoreOfItem(ItemID, ScoreMap) |                      |                                                |
 | --------------------------------------- | -------------------- | ---------------------------------------------- |
@@ -167,7 +167,7 @@ int[] itemList = cf.Similar(0,4);
 | ScoreMap                                | Map<Integer, Double> | 物品打分表，键值：用户id，值：物品被用户的打分 |
 | return                                  | int                  | 0：成功，-1：失败                              |
 
-获取用户的推荐物品列表
+获取某物品的相似物品列表
 
 | Similar(ItemID,  size) |       |                              |
 | ---------------------- | ----- | ---------------------------- |
