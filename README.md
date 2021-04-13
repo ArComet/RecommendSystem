@@ -50,7 +50,9 @@ Neighbor[][] Neighbor = cf.getNeighbor();
 int[] itemlist = cf.Recommending(4,3);
 ```
 
-### sample_item：物品协同过滤初始化聚类器
+### sample_item：物品协同过滤
+
+初始化聚类器
 
 ```java
 import com.recommend.ItemBaseCF;
@@ -97,42 +99,42 @@ int[] itemList = cf.Similar(0,4);
 
 | UserBaseCF() |            |            |
 | ------------ | ---------- | ---------- |
-| return       | 聚类器对象 | UserBaseCF |
+| return       | UserBaseCF | 聚类器对象 |
 
 添加用户  
 
 
-| addUser() |          |      |
-| --------- | -------- | ---- |
-| return    | 该用户id | int  |
+| addUser() |      |          |
+| --------- | ---- | -------- |
+| return    | int  | 该用户id |
 
 
 添加/修改用户打分
 
-| updateItemScoreOfUser(UserID, ItemID, ItemScore) |                    |        |
-| ------------------------------------------------ | ------------------ | ------ |
-| UserID                                           | 用户id             | int    |
-| ItemID                                           | 物品id             | int    |
-| ItemScore                                        | 用户对该物品的打分 | double |
-| return                                           | 0：成功，-1：失败  | int    |
+| updateItemScoreOfUser(UserID, ItemID, ItemScore) |        |                    |
+| ------------------------------------------------ | ------ | ------------------ |
+| UserID                                           | int    | 用户id             |
+| ItemID                                           | int    | 物品id             |
+| ItemScore                                        | double | 用户对该物品的打分 |
+| return                                           | int    | 0：成功，-1：失败  |
 
 
 批量添加/修改用户打分
 
-| updateItemScoreOfUser(UserID, ScoreMap) |                                                |                      |
-| --------------------------------------- | ---------------------------------------------- | -------------------- |
-| UserID                                  | 用户id                                         | int                  |
-| ScoreMap                                | 用户打分表，键值：物品id，值：用户对该物品打分 | Map<Integer, Double> |
-| return                                  | 0：成功，-1：失败                              | int                  |
+| updateItemScoreOfUser(UserID, ScoreMap) |                      |                                                |
+| --------------------------------------- | -------------------- | ---------------------------------------------- |
+| UserID                                  | int                  | 用户id                                         |
+| ScoreMap                                | Map<Integer, Double> | 用户打分表，键值：物品id，值：用户对该物品打分 |
+| return                                  | int                  | 0：成功，-1：失败                              |
 
 
 获取用户的推荐物品列表
 
-| Recommending(userID,  size) |                              |       |
-| --------------------------- | ---------------------------- | ----- |
-| userID                      | 用户id                       | int   |
-| size                        | 推荐列表大小                 | int   |
-| return                      | 物品id的列表（按推荐度排序） | int[] |
+| Recommending(userID,  size) |       |                              |
+| --------------------------- | ----- | ---------------------------- |
+| userID                      | int   | 用户id                       |
+| size                        | int   | 推荐列表大小                 |
+| return                      | int[] | 物品id的列表（按推荐度排序） |
 
 ### ItemBaseCF
 
@@ -140,38 +142,38 @@ int[] itemList = cf.Similar(0,4);
 
 | ItemBaseCF() |            |            |
 | ------------ | ---------- | ---------- |
-| return       | 聚类器对象 | ItemBaseCF |
+| return       | ItemBaseCF | 聚类器对象 |
 
 添加物品  
 
-| addUser() |          |      |
-| --------- | -------- | ---- |
-| return    | 该物品id | int  |
+| addUser() |      |          |
+| --------- | ---- | -------- |
+| return    | int  | 该物品id |
 
 添加/修改用户打分
 
-| updateUserScoreOfItem(ItemID, UserID, UserScore) |                    |        |
-| ------------------------------------------------ | ------------------ | ------ |
-| ItemID                                           | 物品id             | int    |
-| UserID                                           | 用户id             | int    |
-| ItemScore                                        | 物品被该用户的打分 | double |
-| return                                           | 0：成功，-1：失败  | int    |
+| updateUserScoreOfItem(ItemID, UserID, UserScore) |        |                    |
+| ------------------------------------------------ | ------ | ------------------ |
+| ItemID                                           | int    | 物品id             |
+| UserID                                           | int    | 用户id             |
+| ItemScore                                        | double | 物品被该用户的打分 |
+| return                                           | int    | 0：成功，-1：失败  |
 
 批量添加/修改用户打分
 
-| updateUserScoreOfItem(ItemID, ScoreMap) |                                                |                      |
-| --------------------------------------- | ---------------------------------------------- | -------------------- |
-| ItemID                                  | 物品id                                         | int                  |
-| ScoreMap                                | 物品打分表，键值：用户id，值：物品被用户的打分 | Map<Integer, Double> |
-| return                                  | 0：成功，-1：失败                              | int                  |
+| updateUserScoreOfItem(ItemID, ScoreMap) |                      |                                                |
+| --------------------------------------- | -------------------- | ---------------------------------------------- |
+| ItemID                                  | int                  | 物品id                                         |
+| ScoreMap                                | Map<Integer, Double> | 物品打分表，键值：用户id，值：物品被用户的打分 |
+| return                                  | int                  | 0：成功，-1：失败                              |
 
 获取用户的推荐物品列表
 
-| Similar(ItemID,  size) |                              |       |
-| ---------------------- | ---------------------------- | ----- |
-| ItemID                 | 物品id                       | int   |
-| size                   | 相似物品列表大小             | int   |
-| return                 | 物品id的列表（按相似度排序） | int[] |
+| Similar(ItemID,  size) |       |                              |
+| ---------------------- | ----- | ---------------------------- |
+| ItemID                 | int   | 物品id                       |
+| size                   | int   | 相似物品列表大小             |
+| return                 | int[] | 物品id的列表（按相似度排序） |
 
 
 
