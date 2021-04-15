@@ -3,6 +3,9 @@ package com.sample;
 import com.recommend.Neighbor;
 import com.recommend.UserBaseCF;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**********
  * 即时动态推荐算法
  * 根据用户近期浏览商品
@@ -21,6 +24,8 @@ public class sample_user {
         };
         //创建用户协同过滤聚类器
         UserBaseCF cf = new UserBaseCF();
+
+        /*
         //导入数据
         for (int i=0; i<5; i++){
             int uid = cf.addUser();
@@ -30,6 +35,20 @@ public class sample_user {
                 cf.updateItemScoreOfUser(uid,j,matrix[i][j]);
             }
         }
+        */
+
+        //批量方式导入数据
+        for (int i=0; i<5; i++){
+            Map<Integer, Double> map = new HashMap<>();
+            for (int j=0; j<5; j++){
+                if (matrix[i][j]==0) continue;//0表示未评分，跳过
+                //修改 uid用户 对 j商品 的评分
+                map.put(j,matrix[i][j]);
+            }
+            int uid = cf.addUser();
+            cf.updateItemScoreOfUser(uid,map);
+        }
+
         //获取用户近邻（测试用）
         Neighbor[][] Neighbor = cf.getNeighbor();
 
@@ -39,7 +58,7 @@ public class sample_user {
         System.out.println("]");
 
         //获取uid为4的用户的大小为4的推荐商品列表
-        int[] itemList = cf.Recommending(3,4);
+        int[] itemList = cf.Recommending(4,4);
 
         System.out.print("Recommending for user 4:[");
         for (int i=0; i<4; i++)

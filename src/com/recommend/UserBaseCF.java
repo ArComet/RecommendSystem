@@ -184,7 +184,7 @@ public class UserBaseCF extends BaseData{
 			score[UserID]=ScoreMap;
 
 			for (int uid=0; uid<UserSize; uid++){
-				numOfneighbor[UserID]=findNeighbor(UserID);
+				numOfneighbor[uid]=findNeighbor(uid);
 			}
 
 			return 0;
