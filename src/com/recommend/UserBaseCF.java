@@ -165,7 +165,7 @@ public class UserBaseCF extends BaseData{
 			}
 			for (int uid=0; uid<UserSize; uid++){
 				if (score[uid].containsKey(ItemID)){
-					numOfneighbor[UserID]=findNeighbor(UserID);
+					numOfneighbor[uid]=findNeighbor(uid);
 				}
 			}
 			return 0;

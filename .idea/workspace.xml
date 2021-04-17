@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5791b88a-3a11-4aeb-a993-fe0f24203c2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ABOUT/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ABOUT/CF.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sample/sample_user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sample/sample_user.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,26 +20,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sample/sample_item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="532">
               <caret line="35" column="30" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sample/sample_user.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="186" column="51" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
+            <state relative-caret-position="292">
+              <caret line="164" column="13" lean-forward="true" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
               <folding>
                 <element signature="e#753#754#0" expanded="true" />
                 <element signature="e#783#784#0" expanded="true" />
@@ -52,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="840">
               <caret line="38" selection-start-line="10" selection-end-line="38" />
               <folding>
                 <element signature="method#updateUserScoreOfItem#0;class#ItemBaseCF#0" />
@@ -116,12 +115,12 @@
         <option value="$PROJECT_DIR$/src/com/sample/sample_u.java" />
         <option value="$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java" />
         <option value="$PROJECT_DIR$/src/com/sample/sample_item.java" />
-        <option value="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" />
         <option value="$PROJECT_DIR$/src/com/sample/sample_user.java" />
+        <option value="$PROJECT_DIR$/src/com/recommend/UserBaseCF.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="125" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
@@ -134,8 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +169,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,17 +247,18 @@
       <workItem from="1618281321985" duration="611000" />
       <workItem from="1618303274740" duration="10498000" />
       <workItem from="1618501691867" duration="2074000" />
+      <workItem from="1618672972460" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22212000" />
+    <option name="totallyTimeSpent" value="22855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="100" y="0" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29657227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -293,6 +293,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="38" selection-start-line="10" selection-end-line="38" />
+          <folding>
+            <element signature="method#updateUserScoreOfItem#0;class#ItemBaseCF#0" />
+            <element signature="method#updateUserScoreOfItem#1;class#ItemBaseCF#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recommend/BaseData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -325,39 +336,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recommend/ItemBaseCF.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sample/sample_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="38" selection-start-line="10" selection-end-line="38" />
-          <folding>
-            <element signature="method#updateUserScoreOfItem#0;class#ItemBaseCF#0" />
-            <element signature="method#updateUserScoreOfItem#1;class#ItemBaseCF#0" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sample/sample_item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="532">
           <caret line="35" column="30" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recommend/UserBaseCF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="186" column="51" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
+        <state relative-caret-position="292">
+          <caret line="164" column="13" lean-forward="true" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
           <folding>
             <element signature="e#753#754#0" expanded="true" />
             <element signature="e#783#784#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sample/sample_user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
